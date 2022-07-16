@@ -1,0 +1,45 @@
+.Showhead{
+    width:100vw;
+    height:60vh;
+    background:url("../../public/images/20.webp") center center/cover;
+
+}
+.ShowImags{
+    background:#000;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(600px,1fr));
+    gap:2px;
+}
+.ShowImags img{
+    width:100%;
+}
+.showAbout{
+    width:100vw;
+    min-height:60vh;
+    background: #000;
+    color: #fff;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.showAbout h1{
+    margin:1rem 0;
+    font-size:50px;
+}
+.showAbout p{
+    width:50%;
+    font-size:25px;
+    line-height:1.5;
+}
+@media screen and (max-width:450px){
+    .showAbout p{
+        width:80%;
+        font-size:20px;
+        line-height:1.5;
+    } 
+    .ShowImags{
+        grid-template-columns:1fr;
+      
+    }
+}

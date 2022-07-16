@@ -1,0 +1,197 @@
+.aboutCast{
+    text-align: center;
+    padding:3rem;
+    margin-top: 2rem;
+}
+.aboutCast .aboutBox{
+    display: flex;
+    gap:1rem;
+    font-size:25px;
+}
+.aboutCast h1:first-child{
+    font-size:5vw;
+    margin-bottom:1.5rem;
+    color:rgb(69, 69, 69);
+}
+.aboutCast h2{
+    font-size:3vw;
+    margin-top: 2rem;
+    color:rgb(69, 69, 69);
+}
+.aboutCast .aboutBox p{
+    padding:2rem;
+    text-align: justify;
+    line-height:1.5;
+    width:50%;
+    color:rgb(131, 126, 126);
+}
+.aboutCast > p{
+    margin:1rem;
+    padding:5vw;
+    font-size:25px;
+    color:rgb(131, 126, 126);   
+
+}
+.aboutCast h3{
+    color:rgb(131, 126, 126);
+    font-size:3vw;
+
+
+}
+.aboutCast button{
+    margin:1rem;
+    padding:10px 20px;
+    font-size:20px;
+    background:#242526;
+    cursor: pointer;
+    color:#fff;
+    transition-duration: 0.5s;
+}
+.aboutCast button:hover{
+    background-color:#fff;
+    color: #242526;
+}
+.mainLinks{
+    width:100vw;
+    padding:5rem;
+    display:grid;
+    justify-content:center;
+    align-items:baseline;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+}
+.mainLinks img{
+    padding:1rem;
+    width:100%;
+    height:100%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.mainLinks img:hover{
+    filter:blur(4px);
+}
+.mainLinks > div{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:10px;
+    margin-bottom:2rem;
+    padding-bottom:5px;
+}
+.mainLinks > div > p{
+    font-size:25px;
+    margin-left:20px;
+    cursor: pointer;
+}
+
+.dark-text{
+    color:rgba(51, 51, 51, 0.83);
+    font-weight:600;
+}
+.brands{
+    margin:2rem 0;
+}
+.brands img{
+    width:100%;
+    height:100%;
+}
+.showroom{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin:5rem 0;
+    background:#242526;
+    padding:2rem;
+}
+.showroom div img{
+    width:100%;
+    border-radius:10px;
+}
+.showroom div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#fff;
+    padding:2rem;
+}
+.showroom h1{
+    font-size:40px;
+    margin:3rem 0;
+}
+.showroom p{
+    font-size:25px;
+    line-height:1.5;
+}
+.goUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    z-index: 100;
+    bottom:40px;
+    right:20px;
+    font-size:40px;
+    cursor: pointer;
+    transition-duration:0.5s;
+    height:70px;
+    width:70px;
+    background:rgba(15, 13, 13, 0.399);
+    color: #fff;
+    border-radius:20px;
+    font-weight: 900;
+}
+.goUp:hover{
+    color:#689f38;
+}
+@media screen and (max-width:1000px){
+    .showroom{
+        grid-template-columns:1fr;
+        padding:1rem;
+    }
+    .aboutCast .aboutBox{
+        flex-direction: column;
+    }  
+    .aboutCast .aboutBox p{
+        width:100%;
+        font-size:22px;
+        padding:0;
+    }
+    .aboutCast h1:first-child{
+        font-size:6vw;
+
+    }
+    .aboutCast h2{
+        font-size:4vw;
+        margin-bottom: 1rem;
+        margin-top:2rem;
+    }
+}
+@media screen and (max-width:450px){
+    .aboutCast .aboutBox p{
+        padding:0rem;
+        font-size:20px;
+    }
+    .aboutCast h1:first-child{
+        font-size:10vw;
+
+    }
+    .aboutCast h2{
+        font-size:8vw;
+    }
+    .aboutCast > p{
+        margin:0rem;
+        padding: 0;
+        font-size:25px; 
+        text-align: justify;
+        margin-bottom:1rem;
+    }
+    .showroom h1{
+        font-size:30px;
+        margin:3rem 0;
+        text-align: center;
+    }
+    .showroom p{
+        font-size:20px;
+        text-align: justify;
+        line-height:1.6;
+    }
+}

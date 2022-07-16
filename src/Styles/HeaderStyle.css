@@ -1,0 +1,304 @@
+.head{
+    width:100vw;
+    min-height: 100vh;
+    position: relative;
+    background:url("../../public/images/15.jpg") center center/cover;
+    overflow-x: hidden !important;
+}
+.contact{
+    width:100vw;
+    background:#242526;
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    align-items: center;
+    color:#fff;
+}
+.contact div{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width:auto;
+    height:100%;
+    font-size:22px;
+    gap:20px;
+}
+.contact div p{
+    transition-duration:0.5s;
+    cursor: pointer;
+}
+.contact div p:hover{
+    color: #689f38;
+}
+.contact div:nth-child(1) i{
+    transition-duration:0.5s;
+    cursor: pointer;
+}
+.contact div:nth-child(1) i:hover{
+    color:#689f38;
+}
+.contact div:nth-child(2) button{
+    width:50px;
+    display:flex;
+    flex-direction: column;
+    background:none;
+    border: none;
+    gap:6px;
+    cursor: pointer;
+}
+.contact div:nth-child(2) span{
+     width:30px;
+     height:2.5px;
+     background:#ddd;
+     transition: 0.5s;
+}
+.contact div:nth-child(2) span:nth-child(1){
+    width:10px;
+}
+.contact div:nth-child(2) span:nth-child(2){
+    width:20px;
+}
+.contact div:nth-child(2) button:hover span{
+    width:30px;
+    background: #689f38;
+}
+.requestBox{
+    position: absolute;
+    top:0;
+    width:500px;
+    background: #fff;
+    right:0;
+    height:100vh;
+    padding:30px;
+    font-size:19px;
+    transition-duration:0.5s;
+    transform: translateX(100%);
+}
+.requestBox.active{
+    transform: translateX(0); 
+}
+.requestBox i{
+    position: relative;
+    left:430px;
+    font-size:30px;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    align-items:stretch;
+    gap:20px;
+    flex-direction: column;
+}
+form input ,form textarea{
+    border:1.5px solid #ddd;
+    padding:10px  8px;
+    font-size:20px;
+    color:rgba(0, 0, 0, 0.7);
+}
+form input:focus,form textarea:focus{
+    outline-color:#689f38;
+}
+textarea{
+    height:170px;
+}
+.requestBox button{
+    width:120px;
+    margin:1rem auto;
+    padding:8px 2px;
+    font-size:22px;
+    cursor: pointer;
+    background: none;
+    color:rgba(0, 0, 0, 0.6);
+    border:1.5px solid #ddd;
+    transition-duration:0.5s;
+}
+.requestBox button:hover{
+    background:#689f38;
+    color:#fff;
+    border:1.5px solid #689f38;
+    border-radius:3px; 
+}
+form input::placeholder{
+    color:rgba(0, 0, 0, 0.5);
+}
+form div{
+    display:flex;
+    gap:15px;
+}
+form div input{
+    width:50%;
+}
+ .navbar{
+    width:100%;
+    height:150px;
+    background:rgba(0, 0, 0, 0.2);
+    padding:20px;
+    display: flex;
+    align-items: center;
+    transition-duration:0.5s;
+}
+.navbar > ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap:5vw;
+}
+.navbar  ul  li{
+    text-align: center;
+    font-size:25px;
+    padding:5px;
+    color:#fff !important;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li::after,.navbar > ul > li > ul > li::after{
+    position: absolute;
+    bottom:-5px;
+    content:'';
+    width:0px;
+    height:2px;
+    border-radius:5px;
+    left:0;
+    background: #fff;
+    transition-duration:0.5s;
+}
+.navbar > ul > li > ul > li{
+    color:rgb(118, 118, 118) !important;
+}
+.navbar > ul > li > ul > li::after{
+    background-color:rgb(118, 118, 118);
+}
+.navbar > ul > li > ul{
+    position: absolute;
+    top:70px;
+    width:300px;
+    margin:0 auto;
+    background-color:#ddd;
+    max-height:0;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:start;
+    gap:10px;
+    padding-left:5px;
+    overflow:hidden;
+    transition-duration:0.5s;
+
+}
+.navbar > ul > li:hover > ul{
+    min-height:200px;
+    transition-duration:0.5s;
+    padding:60px 20px;
+}
+.navbar i span{
+    position: relative;
+    bottom:12px;
+    right:6px;
+    font-size:20px;
+}
+.navbar ul li:hover::after{
+    height:3;
+    width:100%;
+}
+.navbar ul li ul li:hover::after{
+    color: #000;
+    height:3;
+    width:100%;
+}
+.navbar.navbar.active ul li ul li:hover::after{
+    background: #242526;
+    height:3;
+    width:100%;
+}
+.navbar.navbar.active ul li:hover::after{
+    height:3;
+    width:100%;
+    background: #242526;
+
+}
+.mobile{
+    display:none;
+}
+.navbar.active{
+    position:fixed;
+    top:0;
+    z-index:100;
+    background:#fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.5s;
+    height:100px;
+}
+.navbar.active li{
+    color:#242526 !important;
+}
+.navbar.active i{
+    display: none;
+}
+@media screen and (max-width:1000px){
+    .desktop{
+        display:none;
+    }
+    .mobile{
+        display: block;
+    }
+    .mobileNavBar{
+        padding:0.5rem;
+        background: #fff;
+        font-size: 20px;
+        position: absolute;
+        width:100vw;
+        position: relative;
+        overflow: hidden;
+        transition-duration:0.5s;
+    }
+    .mobileNavBar.active{  
+        overflow-y:scroll;
+    }
+    .mobileNavBar > ul{
+        height:0px;
+        transition-duration:0.5s;
+    }
+    .mobileNavBar.active > ul{
+        height:500px;
+    }
+    .mobileNavBar > i{
+        font-size:30px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    .mobileNavBar  ul  li{
+        margin:15px 0;
+        padding:0.5em;
+        color:rgb(143, 143, 143);
+        border-bottom:1px  solid rgb(222, 222, 222);
+        user-select: none;
+        cursor: pointer;
+        transition-duration:1s;
+    }
+    .mobileNavBar  ul  li:hover{
+        color: #263238;
+    }
+    .mobileNavBar > ul > li > ul{
+        max-height:0px;
+        min-height:0px;
+        overflow: hidden;
+        transition-duration:1s;
+    }
+    .mobileNavBar > ul > li:hover > ul{
+       min-height:100px;
+       max-height:250px;
+    }
+
+    .mobileNavBar  ul  li:last-child{border: none;}
+
+    
+}
+@media screen and (max-width:450px){
+ li{
+    font-size:20px !important;
+ }   
+}

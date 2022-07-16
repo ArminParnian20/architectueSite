@@ -1,0 +1,30 @@
+footer{
+    width:100vw;
+    min-height:700px;
+    background: #242526;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+}
+footer h2{
+    color:#fff;
+    margin:1.5rem 0;
+}
+footer > div{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+footer a{
+    color:#ddd;
+    padding-left:15px;
+    cursor: pointer;
+    transition-duration:0.5s;
+}
+footer a:hover{
+    color:#689f38;
+}
+footer i{
+    font-size:25px;
+    margin:5px;
+}

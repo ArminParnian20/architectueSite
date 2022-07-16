@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import '../src/Styles/App.css';
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
+import Header from './Component/Header';
+import Main from "./Component/Main";
+import Footer from './Component/Footer';
+import ShowRoom from "./Component/ShowRoom";
+import { Route, Routes } from "react-router";
+import Kitchen from "./Component/Kitchen";
+const App = () => {
+  return ( <Fragment>
+    <Routes>
+       <Route path="/" element={<div>
+        <Header/> <Main/>
+       </div>} />
+       <Route path="/showroom" element={ <ShowRoom/>}/>
+       <Route path="/kitchen" element={<Kitchen/>}/>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    </Routes>
+      <Footer/>
+  </Fragment> );
 }
-
+ 
 export default App;
