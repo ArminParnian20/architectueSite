@@ -65,7 +65,7 @@
 .requestBox{
     position: absolute;
     top:0;
-    width:500px;
+    width:520px;
     background: #fff;
     right:0;
     height:100vh;
@@ -73,6 +73,7 @@
     font-size:19px;
     transition-duration:0.5s;
     transform: translateX(100%);
+    z-index:10000;
 }
 .requestBox.active{
     transform: translateX(0); 
@@ -237,6 +238,9 @@ form div input{
 }
 .navbar.active i{
     display: none;
+}
+.navbar.active ul li .bn{
+    color:#242526 !important;
 }
 @media screen and (max-width:1000px){
     .desktop{

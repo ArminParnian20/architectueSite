@@ -1,4 +1,4 @@
-import { Fragment} from "react";
+import { Fragment, useState} from "react";
 import {Swiper,SwiperSlide} from "swiper/react";
 import { Autoplay } from "swiper";
 import '../Styles/MainStyle.css';
@@ -6,6 +6,14 @@ import 'swiper/css'
 
 
 const Main = () => {
+  const [scroll,setScroll]=useState(1);
+  const onScroll = () =>{
+    const scrollCheck = window.scrollY;
+    setScroll(scrollCheck)
+    console.log(document.body.scroll);
+  }
+document.addEventListener("scroll", onScroll);
+
     return ( <Fragment>
          <div className="aboutCast">
             <h1>Bespoke Joinery London</h1>
@@ -37,7 +45,7 @@ const Main = () => {
 
             </div>
           </div>
-          <div className="goUp" onClick={()=>window.scroll({
+          <div className={scroll> 1000 ? "goUp":"goUp active"} onClick={()=>window.scroll({
             top:0,
             behavior:'smooth'
           })}>

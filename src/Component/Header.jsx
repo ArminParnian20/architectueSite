@@ -61,7 +61,7 @@ document.addEventListener("scroll", onScroll);
                     <li>Design Studio
                     <ul>
                         <li>
-                            <Link to="/showroom">
+                            <Link to="/showroom" style={{color:"rgb(118, 118, 118)"}}>
                                Showroom  
                             </Link>
                            </li>
@@ -69,7 +69,7 @@ document.addEventListener("scroll", onScroll);
                         </ul>
                     </li>
                     <li>
-                    <Link to="/kitchen">Kitchens</Link>
+                    <Link to="/kitchen" className="bn" style={{color:"#fff"}}>Kitchens</Link>
                     </li>
                     <li>Bespoke Joinery</li>
                     <li>Tiles</li>
@@ -91,14 +91,16 @@ document.addEventListener("scroll", onScroll);
                         <i className="bi bi-caret-right"></i>
                     <ul>
                     <li>
-                            <Link to='/showroom'>
+                            <Link to='/showroom' style={{color:"rgb(118, 118, 118)"}}>
                                  Showroom
                             </Link>
                            </li>
                         <li>Cast Showroom</li>
                         </ul>
                     </li>
-                    <Link to='/kitchen'>Kitchens</Link>
+                    <li>
+                    <Link to='/kitchen' style={{color:"rgb(118, 118, 118)"}}>Kitchens</Link>
+                    </li>
                     <li>Bespoke Joinery</li>
                     <li>Tiles</li>
                     <li>Shop<i className="bi bi-caret-right"></i>
