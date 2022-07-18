@@ -302,6 +302,11 @@ form div input{
     
 }
 @media screen and (max-width:450px){
+    .head{
+        position: relative;
+        background:url("../../public/images/16.jpg") center center/cover;
+
+    }
  li{
     font-size:20px !important;
  }   

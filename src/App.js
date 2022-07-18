@@ -7,10 +7,13 @@ import ShowRoom from "./Component/ShowRoom";
 import { Route, Routes } from "react-router";
 import Kitchen from "./Component/Kitchen";
 import Loader from './Component/Loader';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 const App = () => {
  const [load,setLoad]=useState(false)
- window.addEventListener('load',()=>setLoad(true))
+ useEffect(()=>{
+  setTimeout(()=>  setLoad(true),1000)
+ },[])
+//  document.addEventListener('load',()=>setLoad(true))
   return ( <>
   {
     load ? (<div>
