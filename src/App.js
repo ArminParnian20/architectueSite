@@ -8,12 +8,15 @@ import { Route, Routes } from "react-router";
 import Kitchen from "./Component/Kitchen";
 import Loader from './Component/Loader';
 import { useEffect, useState } from 'react';
+import { Code } from 'react-content-loader'
+
 const App = () => {
- const [load,setLoad]=useState(false)
- useEffect(()=>{
-  setTimeout(()=>  setLoad(true),1000)
- },[])
-//  document.addEventListener('load',()=>setLoad(true))
+  const [load,setLoad]=useState(false)
+window.addEventListener('load', () => {
+  setLoad(true)
+});
+
+const MyCodeLoader = () => <Code />
   return ( <>
   {
     load ? (<div>
@@ -26,7 +29,7 @@ const App = () => {
     </Routes>
     
       <Footer/>
-    </div>):(<Loader/>)
+    </div>):(MyCodeLoader())
   }
 
   </> );

@@ -1,10 +1,10 @@
 import { Fragment, useState } from "react";
 import '../Styles/HeaderStyle.css';
 import {Link} from "react-router-dom"
+import { Code } from 'react-content-loader';
 const Header = () => {
     const [getRequest,setRequest]=useState(false);
-    
-
+  const [load,setLoad]=useState(true)
   const [scroll,setScroll]=useState(1);
   const onScroll = () =>{
     const scrollCheck = window.scrollY;
@@ -13,8 +13,14 @@ const Header = () => {
   }
 document.addEventListener("scroll", onScroll);
 
+window.addEventListener('load', () => {
+    setLoad(true)
+  });
 
-    return ( <Fragment>
+  const MyCodeLoader = () => <Code />  
+
+    return (<>
+    {load ? (    <Fragment>
         <div className="head">
             <div className="contact desktop">
                 <div>
@@ -116,7 +122,8 @@ document.addEventListener("scroll", onScroll);
 
             </div>
         </div>
-    </Fragment> );
+    </Fragment> ):(MyCodeLoader())}
+    </>);
 }
  
 export default Header;
