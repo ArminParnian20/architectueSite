@@ -10,10 +10,12 @@ import { Link } from 'react-router-dom';
 const Swip = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return ( <>
-      <p style={{"marginTop":"10px"}}></p>
-      <Link to='/det'> <i className="bi bi-x" 
-      style={{"fontSize":"25px","padding":"5px","margin":"5px","background":"#f0f0f0"
+      <div style={{"textAlign":"right","padding":"5px"}}>
+          <Link to='/det'> <i className="bi bi-x" 
+      style={{"fontSize":"28px","padding":"5px","margin":"5px"
       ,"borderRadius":"50%"}}></i></Link>
+      </div>
+    
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
