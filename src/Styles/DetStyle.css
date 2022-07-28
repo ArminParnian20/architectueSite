@@ -52,4 +52,8 @@
     .mySwiper2{
         width:95vw;
     }
+    .detImages img{
+        width:90%;
+        margin:0 auto;
+    }
 }

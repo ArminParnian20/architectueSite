@@ -27,8 +27,8 @@ const MyCodeLoader = () => <Code />
         <Header/> <Main/>
        </div>} />
        <Route path="/showroom" element={<> <ShowRoom/> <Footer/></>}/>
-       <Route path="/kitchen" element={<Kitchen/>}/>
-       <Route path="/det" element={<Det/>}/>
+       <Route path="/kitchen" element={<><Kitchen/> <Footer/></>}/>
+       <Route path="/det" element={<> <Footer/><Det/></>}/>
        <Route path="/swip" element={<Swip/>}/>
     </Routes>
      
