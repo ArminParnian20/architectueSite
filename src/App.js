@@ -9,6 +9,8 @@ import Kitchen from "./Component/Kitchen";
 import Loader from './Component/Loader';
 import { useEffect, useState } from 'react';
 import { Code } from 'react-content-loader'
+import Det from './Component/Det';
+import Swip from './Component/Swip';
 
 const App = () => {
   const [load,setLoad]=useState(true)
@@ -24,14 +26,14 @@ const MyCodeLoader = () => <Code />
        <Route path="/" element={<div>
         <Header/> <Main/>
        </div>} />
-       <Route path="/showroom" element={ <ShowRoom/>}/>
+       <Route path="/showroom" element={<> <ShowRoom/> <Footer/></>}/>
        <Route path="/kitchen" element={<Kitchen/>}/>
+       <Route path="/det" element={<Det/>}/>
+       <Route path="/swip" element={<Swip/>}/>
     </Routes>
-    
-      <Footer/>
+     
     </div>):(MyCodeLoader())
   }
-
   </> );
 }
  

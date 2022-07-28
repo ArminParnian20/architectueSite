@@ -4,6 +4,7 @@ import { Autoplay } from "swiper";
 import '../Styles/MainStyle.css';
 import 'swiper/css'
 import { Code } from 'react-content-loader';
+import { Link } from 'react-router-dom';
 
 const Main = () => {
   const [load,setLoad]=useState(true);
@@ -41,18 +42,25 @@ const MyCodeLoader = () => <Code />
 </div>
  <div className="container">
    <div className="mainLinks">
-    <div><img src="./images/1.jpg" alt="" /><p>Study</p></div>
-    <div><img src="./images/2.jpg" alt="" /><p>Verands</p></div>
-    <div><img src="./images/3.jpg" alt="" /><p>Bedroom</p></div>
-    <div><img src="./images/4.jpg" alt="" /><p>Drawing room</p></div>
-    <div><img src="./images/19.jpg" alt="" /><p>Reception Room</p></div>
-    <div><img src="./images/7.jpg" alt="" /><p>Wash-stand</p></div>
-    <div><img src="./images/6.jpg" alt="" /><p>Drawing room</p></div>
-    <div><img src="./images/8.jpg" alt="" /><p>Reception room</p></div>
-    <div><img src="./images/9.jpg" alt="" /><p>Furnished</p></div>
-    <div><img src="./images/17.jpg" alt="" /><p>Drawing room</p></div>
-    <div><img src="./images/18.jpg" alt="" /><p>Reception room</p></div>
-    <div><img src="./images/5.jpg" alt="" /><p>Furnished</p></div>
+    <Link to='/det'> <div><img src="./images/1.jpg" alt="" /><p>Study</p></div></Link>
+    <Link to='/det'><div><img src="./images/2.jpg" alt="" /><p>Verands</p></div></Link>
+    <Link to='/det'><div><img src="./images/3.jpg" alt="" /><p>Bedroom</p></div></Link>
+    <Link to='/det'><div><img src="./images/4.jpg" alt="" /><p>Drawing room</p></div></Link>
+    <Link to='/det'><div><img src="./images/19.jpg" alt="" /><p>Reception Room</p></div></Link>
+    <Link to='/det'><div><img src="./images/7.jpg" alt="" /><p>Wash-stand</p></div></Link>
+    <Link to='/det'><div><img src="./images/6.jpg" alt="" /><p>Drawing room</p></div></Link>
+    <Link to='/det'><div><img src="./images/8.jpg" alt="" /><p>Reception room</p></div></Link>
+    <Link to='/det'><div><img src="./images/9.jpg" alt="" /><p>Furnished</p></div></Link>
+    <Link to='/det'><div><img src="./images/17.jpg" alt="" /><p>Drawing room</p></div></Link>
+    <Link to='/det'><div><img src="./images/18.jpg" alt="" /><p>Reception room</p></div></Link> 
+    <Link to='/det'><div><img src="./images/5.jpg" alt="" /><p>Furnished</p></div></Link>    
+
+    
+    
+    
+    
+ 
+    
 
    </div>
  </div>

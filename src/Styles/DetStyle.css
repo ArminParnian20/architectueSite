@@ -1,0 +1,55 @@
+.detbody{
+    width:100vw;
+    display:grid;
+    grid-template-columns:3fr 2fr;
+    border-top:1px solid #ddd;
+    padding:1rem;
+    padding-top:8rem;
+}
+.detImages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+    text-align: center;
+}
+.detImages img{
+    width:70%;
+    margin:0 auto;
+}
+.detText{
+    padding:1rem;
+}
+.detText h1{
+    margin:15px 0;
+    font-size:50px;
+}
+.detText p{
+    color:#666;
+    font-size:22px;
+    text-align: justify;
+    line-height:1.5;
+    padding-right:10px;
+}
+.mySwiper{
+    width:30vw;
+}
+.mySwiper2{
+    width:30vw;
+}
+@media screen and (max-width:600px){
+    .detbody{
+        grid-template-columns:1fr;
+        padding-top:2rem;
+    }
+    .detText h1{
+        font-size:40px;
+    }
+    .mySwiper{
+        width:95vw;
+    }
+    .mySwiper2{
+        width:95vw;
+    }
+}
