@@ -3,6 +3,7 @@
     padding:3rem;
     margin-top: 2rem;
 }
+
 .aboutCast .aboutBox{
     display: flex;
     gap:1rem;
@@ -58,6 +59,7 @@
     justify-content:center;
     align-items:baseline;
     grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    background-repeat: repeat-y;
 }
 .mainLinks img{
     padding:1rem;

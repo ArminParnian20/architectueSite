@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 import { Code } from 'react-content-loader'
 
 const App = () => {
-  const [load,setLoad]=useState(false)
+  const [load,setLoad]=useState(true)
 window.addEventListener('load', () => {
   setLoad(true)
 });
