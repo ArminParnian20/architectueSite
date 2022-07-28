@@ -317,7 +317,7 @@ form div input{
 @media screen and (max-width:450px){
     .head{
         position: relative;
-        min-height:95vh;
+        min-height:50vh;
         background:url("../../public/images/3-h.jpg") center center/cover;
 
     }
