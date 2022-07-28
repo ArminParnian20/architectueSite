@@ -24,7 +24,7 @@ const MyCodeLoader = () => <Code />
     load ? (<div>
           <Routes>
        <Route path="/" element={<div>
-        <Header/> <Main/>
+        <Header/> <Main/>  <Footer/>
        </div>} />
        <Route path="/showroom" element={<> <ShowRoom/> <Footer/></>}/>
        <Route path="/kitchen" element={<><Kitchen/> <Footer/></>}/>
