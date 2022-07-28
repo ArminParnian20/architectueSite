@@ -242,6 +242,19 @@ form div input{
 .navbar.active ul li .bn{
     color:#242526 !important;
 }
+.nav-icons{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding:2px 1rem;
+    font-size:25px;
+}
+.nav-icons i{
+    transition-duration:0.5s;
+}
+.mobileNavBar.active .nav-icons i.bi-justify{
+    color: #689f38;
+}
 @media screen and (max-width:1000px){
     .desktop{
         display:none;

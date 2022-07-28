@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import '../Styles/HeaderStyle.css';
-import { Link } from 'react-router-dom';
+import { Link,NavLink} from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -39,7 +39,10 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className={getRequest? "mobileNavBar active mobile":"mobileNavBar mobile"}>
+             <div className="nav-icons">
             <i className="bi bi-justify mobil" onClick={()=>setRequest(!getRequest)}></i>
+             <NavLink to='/'> <i className="bi bi-house"></i></NavLink>
+             </div>
                 <ul>
                     <li>Design Studio 
                         <i className="bi bi-caret-right"></i>

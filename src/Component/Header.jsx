@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import '../Styles/HeaderStyle.css';
-import {Link} from "react-router-dom"
+import {Link,NavLink} from "react-router-dom"
 import { Code } from 'react-content-loader';
 const Header = () => {
     const [getRequest,setRequest]=useState(false);
@@ -91,7 +91,10 @@ window.addEventListener('load', () => {
                 </ul>
             </div>
             <div className={getRequest? "mobileNavBar active mobile":"mobileNavBar mobile"}>
+            <div className="nav-icons">
             <i className="bi bi-justify mobil" onClick={()=>setRequest(!getRequest)}></i>
+             <NavLink to='/' style={isActive=>({color:isActive ? "#689f38":"#242526"})}> <i className="bi bi-house mobile"></i></NavLink>
+             </div>
                 <ul>
                     <li>Design Studio 
                         <i className="bi bi-caret-right"></i>
